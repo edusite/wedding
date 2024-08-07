@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PARADISE WEDDING PLANNER</title>
+</head>
+
+<body>
+
+    <!--heading -->
+
+    <header>
+        <a href="/" class="logo">Paradise</a>
+        <a href="#" class="menu"><ion-icon name="grid-outline"></ion-icon></a>
+        <ul class="nav">
+            <li><a class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon
+                        name="home-outline"></ion-icon></a></li>
+            <li><a class="nav-btn" href="#" data-target="about" id="na">About us</a></li>
+            <li><a class="nav-btn" href="#" data-target="service">Service</a></li>
+            <li><a class="nav-btn" href="#" data-target="portfolio">Portfolio</a></li>
+            <li><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- heading -->
+
+    <!-- banner -->
+    <div class="banner container-fluid" id="home">
+        <div class="bg-slide slide-1 active">
+            <div class="content">
+                <h1>Wedding</h1>
+                <p>A wedding is a beautiful and sacred celebration of love, commitment, and the joining of two souls. It marks the beginning of a new chapter in the lives of the couple, surrounded by family and friends who come together to witness and share in their joy. From the exchange of vows to the first dance, every moment is filled with emotion and meaning, symbolizing the couple's promise to support and cherish each other for a lifetime. 
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="../media/couple-kissing.jpg" alt="">
+                <div class="circle large">
+                    <img src="../media/couple-kissing.jpg" alt="">
+                    <div class="circle small">
+                        <img src="../media/couple-kissing.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-2">
+            <div class="content">
+                <h1>ceremony</h1>
+                <p>A ceremony is a formal and often solemn event that marks a significant moment or milestone in life. It is characterized by specific rituals and traditions, reflecting cultural, religious, or personal significance. Whether it's a wedding, graduation, or award presentation, a ceremony brings people together to celebrate, honor, and witness the importance of the occasion. It serves as a poignant reminder of life's meaningful moments, creating lasting memories for all who participate.
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="../media/ring.jpg" alt="">
+                <div class="circle large">
+                    <img src="../media/ring.jpg" alt="">
+                    <div class="circle small">
+                        <img src="../media/ring.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-3">
+            <div class="content">
+                <h1>honeymoon</h1>
+                <p>A honeymoon is a cherished time for newlyweds to celebrate their union and enjoy each other's company in a romantic setting. It is an opportunity to unwind and explore new places together, creating unforgettable memories as they embark on their journey as a married couple. Whether spent on a tropical beach, exploring a bustling city, or in a cozy mountain retreat, a honeymoon is a special time dedicated to love, relaxation, and adventure.
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="../media/honeymoon.jpg" alt="" />
+                <div class="circle large">
+                    <img src="../media/honeymoon.jpg" alt="" />
+                    <div class="circle small">
+                        <img src="../media/honeymoon.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="slide-loader">
+            <li><a class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a class="slide-btn" data-target="slide-2">2</a></li>
+            <li><a class="slide-btn" data-target="slide-3">3</a></li>
+        </ul>
+        <div class="share">
+            <p>share</p>
+            <a href="#"><ion-icon name="share-social-outline"></ion-icon></a>
+        </div>
+        <div class="lead">
+            <svg viewBox="0 0 100 100" height="100">
+                <defs>
+                    <path id="circle" d="
+                    M 50, 50
+                    m -37, 0
+                    a 37, 37 0 1, 1 74, 0
+                    a 37, 37 0 1, 1 -74, 0">
+                </defs>
+                <text font-size="13">
+                    <textPath xlink:href="#circle">
+                        Will you marry me?Baby Yes, I do
+                    </textPath>
+                </text>
+            </svg>
+            <a href="#" class="move-down" onclick="initNavigation();">
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- banner -->
+
+    <main>
+        <!-- about page -->
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <h1 id="ab">About Us</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-box">
+                            <img src="../media/wedding couple.jpg" alt="" class="img-fluid">
+                            <img src="../media/barnyarbarnyar.jpg" alt="" class="corner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../media/logo.jpg" alt="" class="section-bg-img">
+                        <h4>The aim of these project</h4>
+                        <p>
+                            The aim of the wedding website project is to create a comprehensive and user-friendly platform that serves as a central hub for all wedding-related information. This website will provide guests with essential details such as the wedding date, venue, schedule, and travel accommodations. By offering a seamless experience, the website will help streamline communication between the couple and their guests, ensuring that everyone is well-informed and prepared for the big day.
+                        </p>
+                    </div>
+                    <div class="noname">
+                        <button>
+                            <a href="../../Html/service.html #tm">Discover more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about page -->
+
+        <!-- service -->
+
+        <section id="service" class="service">
+            <div class="container">
+                <div class="row">
+                    <h1>Our Service</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="../media/wedding-dresses-service.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h4>Wedding Dress</h4>
+                                <p>Wedding dresses are the epitome of bridal elegance, capturing the essence of a bride's style and personality. They come in various styles, from classic ball gowns with intricate lace and beading to sleek.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="../media/ring.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h4>Engagement ring</h4>
+                                <p>Couple rings symbolize the deep bond and commitment between partners, representing their shared journey and love. These rings, often designed as matching sets, are exchanged as a promise of togetherness and devotion, making them a cherished token of the couple's unbreakable connection.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="noname">
+                    <button>
+                        <a href="../../Html/service.html">Discover more</a>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="../media/ceremony4.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h4>Wedding party planning</h4>
+                                <p>Wedding party planning involves coordinating all the details for a memorable celebration, from selecting a venue and organizing the guest list to choosing decorations, entertainment, and catering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="../media/honeymoon2.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h4>Planning a honeymoon trip</h4>
+                                <p>Planning a honeymoon trip involves selecting a dream destination, arranging accommodations, and organizing activities that both partners will enjoy. This special getaway is a chance to relax and celebrate the start of married life.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="noname">
+                    <button>
+                        <a href="../../Html/service.html">Discover more</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Portfolio -->
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <h1>My Portfolio</h1>
+                </div>
+                <ul id="portfolio-filters" class="d-flex justify-content-center">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-wedding">Wedding dresses and Engagement ring</li>
+                    <li data-filter=".filter-cremony">Cremony</li>
+                    <li data-filter=".filter-honeymoon">Honeymoon</li>
+                </ul>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/dress and ring portfolio1.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>The engagement ring</h4>
+                            <p>Customer-This is so cool.</p>
+                            <a href="../media/dress and ring portfolio1.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/dress and ring portfolio2.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding Dress</h4>
+                            <p>Customer-The dress has been tailored perfectly to my fiancee's specifications.</p>
+                            <a href="../media/dress and ring portfolio2.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/dress and ring portfolio3.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>A pair of wedding derss.</h4>
+                            <p>From Customer-This Wedding dresses are perfect match</p>
+                            <a href="../media/dress and ring portfolio3.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/wedding porfolio1.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Evening beauty and reception decrotions</h4>
+                            <p>From Customer-The decoratins are beautiful. Can we rely on them for the dinner party as well.</p>
+                            <a href="../media/wedding porfolio1.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/wedding porfolio2.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Decorations aranged with the beauty of the lake and river for the wedding.</h4>
+                            <p>From Customer-Your decorations make us very happy</p>
+                            <a href="../media/wedding porfolio2.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/wedding porfolio3.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Decorations aranged with the beauty of the lake and river for the wedding.</h4>
+                            <p>From Customer-Your decorations make us very happy</p>
+                            <a href="../media/wedding porfolio3.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/Honeymoon protfolio.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>To Chaung-Tha beach</h4>
+                            <p>We really enjoyed the honeymoon trip you arranged. Tank you very much.</p>
+                            <a href="../media/Honeymoon protfolio.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/Honeymoon protfolio2.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>To Ngay-saung</h4>
+                            <p>We really enjoyed the honeymoon trip you arranged. Tank you very much.</p>
+                            <a href="../media/Honeymoon protfolio2.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio img">
+                            <img src="../media/Honeymoon protfolio3.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>To Kalaw-Pate-chin-meow</h4>
+                            <p>We really enjoyed the honeymoon trip you arranged. Tank you very much.</p>
+                            <a href="../media/Honeymoon protfolio3.jpg.jpg" data-gallery="portfoliioGallery"
+                                class="portfolio-lightbox preview-link" title="wedding planning 1"><ion-icon
+                                    name="add-outline"></ion-icon></a>
+                            <a href="#" class="details-link" title="More details"><ion-icon
+                                    name="link-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Portfolio -->
+        <!-- contant -->
+
+        <section id="contact" class="contact bg-light py-3 py-md-5">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                        <h3 class="fs-6 text-secondary mb-2 text-uppercase text-center">Get in Touch</h3>
+                        <h2 class="display-5 mb-4 mb-md-5 text-center">We're always on the lookout to work with new
+                            clients.</h2>
+                        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0 align-items-xl-center">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid rounded" loading="lazy" src="../media/the last image.jpg"
+                            alt="Get in Touch">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-12 col-xl-11">
+                                <div class="bg-white border rounded shadow-sm overflow-hidden">
+                                    <form action="#!">
+                                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                            <div class="col-12">
+                                                <label for="fullname" class="form-label">Full Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="fullname" name="fullname"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Email <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                        value="" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-telephone"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                                        value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="subject" class="form-label">Subject <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="subject" name="subject"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="message" class="form-label">Message <span
+                                                        class="text-danger">*</span></label>
+                                                <textarea class="form-control" id="message" name="message" rows="3"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn btn-primary btn-lg" type="submit">Send
+                                                        Message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contant -->
+            <!-- footer -->
+            <footer class="py-3">
+
+                <!-- Widgets - Bootstrap Brain Component -->
+                <div class="py-6 py-md-8 py-xl-10">
+                    <div class="container">
+                        <div class="row gy-3">
+                            <div class="col-12">
+                                <div class="footer-logo-wrapper text-center">
+                                    <p class="logo" style="font-family: Playwrite PE" , cursive;>PARADISE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright - Bootstrap Brain Component -->
+                <div>
+                    <div class="container">
+                        <div class="row gy-3 gy-sm-0 align-items-sm-center">
+                            <div class="col-sm-6">
+                                <div class="copyright-wrapper d-block mb-1 fs-9 text-center text-sm-start">
+                                    &copy; 2024. Paradise Co.Ld
+                                </div>
+                                <div class="credit-wrapper d-block text-secondary fs-10 text-center text-sm-start">
+                                    Built by<a href="https://bootstrapbrain.com/"
+                                        class="link-secondary text-decoration-none">
+                                        Paradise</a> with <span class="text-primary">&#9829;</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="social-media-wrapper">
+                                    <ul
+                                        class="m-0 list-unstyled d-flex justify-content-center justify-content-sm-end gap-3">
+                                        <li>
+                                            <a href="#!" class="link-opacity-75-hover link-dark">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="link-opacity-75-hover link-dark">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="link-opacity-75-hover link-dark">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="isotope.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+</body>
+
+</html>
